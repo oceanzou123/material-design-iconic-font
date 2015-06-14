@@ -4,6 +4,8 @@ module.exports = {
         dest: 'dist/font',
         options: {
             engine: 'node',
+            centerHorizontally : true,
+            normalize: true,
             fontHeight: 48
         }
     }
