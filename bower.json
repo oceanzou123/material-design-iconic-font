@@ -13,11 +13,12 @@
   ],
   "license": ["OFL-1.1", "MIT"],
   "main": [
-    "./css/material-design-iconic-font.css",
-    "./fonts/*"
+    "./dist/css/*",
+    "./dist/fonts/*"
   ],
   "ignore": [
     "*/.*",
+    "node_modules/*",
     "*.json",
     "*.md"
   ],
