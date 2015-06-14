@@ -15,9 +15,14 @@
     "./fonts/*"
   ],
   "homepage": "https://zavoloklom.github.io/material-design-iconic-font/",
-  "bugs": "https://github.com/zavoloklom/material-design-iconic-font/issues",
+  "bugs": {
+    "url": "https://github.com/zavoloklom/material-design-iconic-font/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zavoloklom/material-design-iconic-font.git"
+    "url": "git+https://github.com/zavoloklom/material-design-iconic-font.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
