@@ -50,3 +50,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+### Node modules
+node_modules/
