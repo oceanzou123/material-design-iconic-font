@@ -14,3 +14,7 @@ prod:
     - 'concurrent:prodFirst'
     - 'concurrent:prodSecond'
     - 'concurrent:prodThird'
+font:
+  description: 'Build font'
+  tasks:
+    - 'webfont'
