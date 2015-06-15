@@ -65,3 +65,6 @@ $RECYCLE.BIN/
 
 ### Node modules
 node_modules/
+
+### Vagrant files
+.vagrant/
