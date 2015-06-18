@@ -14,7 +14,29 @@ prod:
     - 'concurrent:prodFirst'
     - 'concurrent:prodSecond'
     - 'concurrent:prodThird'
-font:
-  description: 'Build font'
+prepare-icons:
+  description: 'Move and rename svg from material-design-icons repository to src folder'
   tasks:
-    - 'webfont'
+    - 'copy:action'
+    - 'copy:alert'
+    - 'copy:av'
+    - 'copy:communication'
+    - 'copy:content'
+    - 'copy:device'
+    - 'copy:editor'
+    - 'copy:file'
+    - 'copy:hardware'
+    - 'copy:image'
+    - 'copy:maps'
+    - 'copy:navigation'
+    - 'copy:notification'
+    - 'copy:social'
+    - 'copy:toggle'
+font-dev:
+  description: 'Build iconic font and example page from Google icons only'
+  tasks:
+    - 'webfont:dev'
+font-prod:
+  description: 'Build iconic font and example page from prepared icons'
+  tasks:
+    - 'webfont:prod'
