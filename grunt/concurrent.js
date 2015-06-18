@@ -5,24 +5,24 @@ module.exports = {
     },
     // Development tasks
     devFirst: [
-        'clean'
+        'clean:dev'
     ],
     devSecond: [
         'less:dev'
     ],
     devThird: [
-        'pleeease:dist',
-        'pleeease:min'
+        'pleeease:dev'
     ],
     // Production tasks
     prodFirst: [
-        'clean'
+        'clean:prod'
     ],
     prodSecond: [
         'less:prod'
     ],
     prodThird: [
-        'pleeease:dist',
-        'pleeease:min'
+        'pleeease:prod',
+        'pleeease:prod-min',
+        'less-sass'
     ]
 };

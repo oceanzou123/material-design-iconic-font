@@ -1,4 +1,21 @@
 module.exports = {
+    less: {
+        files: [{
+            expand: true,
+            dot: true,
+            filter: 'isFile',
+            flatten: true,
+            cwd: 'scss/temp/',
+            dest: 'scss/',
+            src: ['{,*/}*.scss'],
+            rename: function(dest, src) {
+                if (src !== 'material-design-iconic-font.scss') {
+                    src = "_" + src;
+                }
+                return dest + src;
+            }
+        }]
+    },
     action: {
         files: [{
             expand: true,

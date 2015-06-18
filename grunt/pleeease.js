@@ -1,5 +1,5 @@
 module.exports = {
-    dist: {
+    prod: {
         options: {
             autoprefixer: {'browsers': ["> 1%", "last 2 versions"]},
             filters: {'oldIE': true},
@@ -11,7 +11,19 @@ module.exports = {
             'dist/css/material-design-iconic-font.css': 'dist/css/material-design-iconic-font.css'
         }
     },
-    min: {
+    dev: {
+        options: {
+            autoprefixer: {'browsers': ["> 1%", "last 2 versions"]},
+            filters: {'oldIE': true},
+            opacity: true,
+            pseudoElements: true,
+            minifier: false
+        },
+        files: {
+            'test/css/material-design-iconic-font.css': 'test/css/material-design-iconic-font.css'
+        }
+    },
+    'prod-min': {
         options: {
             autoprefixer: {'browsers': ["> 1%", "last 2 versions"]},
             filters: {'oldIE': true},

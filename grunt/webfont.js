@@ -1,36 +1,42 @@
 module.exports = {
     'prod': {
         src: 'svg/prod/*/*.svg',
-        dest: 'dist/test',
+        dest: 'test/font',
+        destCss: 'less/temp',
         options: {
             font: 'Material-Design-Iconic-Font',
             syntax: 'bootstrap',
             stylesheet: 'less',
             centerHorizontally : true,
             normalize: true,
-            //template: 'grunt/templates/glyphs.css',
+            template: 'grunt/templates/glyphs.css',
+            destHtml: 'test',
             htmlDemoTemplate: 'grunt/templates/glyphs.html',
             templateOptions: {
-                classPrefix: 'mdi-',
-                mixinPrefix: 'mdi-'
+                baseClass:   'zmdi',
+                classPrefix: 'zmdi-',
+                mixinPrefix: 'zmdi-'
             }
         }
     },
     'dev': {
         src: 'svg/google/*/*.svg',
-        dest: 'dist/test',
+        dest: 'test/font',
+        destCss: 'less/temp',
         options: {
             font: 'Material-Design-Iconic-Font',
             syntax: 'bootstrap',
-            stylesheet: 'css',
+            styles: 'icon',
+            stylesheet: 'less',
             centerHorizontally : true,
             normalize: true,
             template: 'grunt/templates/glyphs.css',
+            destHtml: 'test',
             htmlDemoTemplate: 'grunt/templates/glyphs.html',
             templateOptions: {
-                baseClass:   'mdi',
-                classPrefix: 'mdi-',
-                mixinPrefix: 'mdi-'
+                baseClass:   'zmdi',
+                classPrefix: 'zmdi-',
+                mixinPrefix: 'zmdi-'
             }
         }
     }
