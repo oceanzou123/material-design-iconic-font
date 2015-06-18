@@ -70,4 +70,4 @@ node_modules/
 .vagrant/
 
 ### Test files
-test
+test/
